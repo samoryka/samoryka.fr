@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './HeaderLink.css';
 
 class HeaderLink extends Component {
     render() {

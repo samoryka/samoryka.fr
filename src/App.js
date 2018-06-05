@@ -13,7 +13,7 @@ class App extends Component {
       <div>
         <Header/>
         <Switch>
-            <Route exact={true} path={process.env.PUBLIC_URL + '/'} render={() => <Redirect to="/about" />} />
+            <Route exact={true} path={process.env.PUBLIC_URL + '/'} render={() => <Redirect to='/about' />} />
             <Route exact={true} path={process.env.PUBLIC_URL + '/about'} component={About} />
             <Route exact={true} path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
             <Route exact={true} path={process.env.PUBLIC_URL + '/resume'} component={Resume} />

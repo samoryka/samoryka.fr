@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import './Header.css';
 
 import HeaderLink from './HeaderLink';
 
 const LINKS = [
     {
-        link: "/about",
-        title: "About",
+        link: '/about',
+        title: 'About',
     },
     {
-        link: "/projects",
-        title: "Projects",
+        link: '/projects',
+        title: 'Projects',
     },
     {
-        link: "/resume",
-        title: "Resume",
+        link: '/resume',
+        title: 'Resume',
     }
 ]
 
 class Header extends Component {
 
     componentWillMount() {
+        // We default to /about
+        let location = this.props.location.pathname !== '/' ? this.props.location.pathname : '/about';
         this.setState({
-            currentPage: this.props.location.pathname,
+            currentPage: location,
         });
     }
 
