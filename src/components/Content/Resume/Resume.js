@@ -5,6 +5,7 @@ class Resume extends Component {
         return (
             <div>
                 <h2>Resume</h2>
+                <span>résumé du resumé, lien CV</span>
             </div>
         );
     }

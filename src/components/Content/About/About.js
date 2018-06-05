@@ -5,6 +5,7 @@ class About extends Component {
         return (
             <div>
                 <h2>About</h2>
+                <span>Hi, dev, graduate, Lyon relocate Berlin, former experiences (lien CV) linkedin, github</span>
             </div>
         );
     }
