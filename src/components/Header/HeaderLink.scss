@@ -1,5 +1,29 @@
 @import 'styles/colors.scss';
+@import 'styles/dimensions.scss';
+@import 'styles/durations.scss';
+
+.navLinkContainer:nth-child(2) {
+    margin-left: $dimensionBaseSpacing/2;
+    margin-right: $dimensionBaseSpacing/2;
+}
+.navLink {
+    text-decoration: none;
+    color: $colorTextSecondary;
+    transition: $defaultTransition;
+}
+
+@media (max-width: $breakPointMobile) {
+    .navLink {
+        font-size: $dimensionTextH5;
+    }
+}
+
+
+.navLink:hover {
+    color: $colorTextPrimary;
+}
 
 .currentNavLink{
-    background: $accentRed;
+    color: $colorTextPrimary;
+    border-bottom: 3px solid $colorAccent;
 }

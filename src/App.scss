@@ -1,0 +1,32 @@
+@import 'styles/dimensions.scss';
+@import 'styles/fonts.scss';
+
+.app {
+    font-family: $sansSerif;
+    padding-bottom: 0;
+}
+
+@media (min-width: $breakPointTablet) {
+    .app {
+        padding-top: $dimensionBaseSpacing * 2;
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width : $breakPointMobile) and (max-width: $breakPointTablet) {
+    .app {
+        padding-top: $dimensionBaseSpacing * 2;
+        padding-left: $dimensionBaseSpacing * 4;
+        padding-right: $dimensionBaseSpacing * 4;
+    }
+}
+
+@media (max-width : $breakPointMobile){
+    .app {
+        padding-top: $dimensionBaseSpacing * 1;
+        padding-left: $dimensionBaseSpacing * 1;
+        padding-right: $dimensionBaseSpacing * 1;
+    }
+}

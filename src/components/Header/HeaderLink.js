@@ -7,10 +7,15 @@ import './HeaderLink.css';
 class HeaderLink extends Component {
     render() {
         return (
-            <li>
+            <li className='navLinkContainer'>
                 <Link
                     to={this.props.link}
-                    className={this.props.currentPage === this.props.link ? 'currentNavLink' : ''}
+                    className={
+                        [
+                            'navLink',
+                            this.props.currentPage === this.props.link ? 'currentNavLink' : ''
+                        ].join(' ')
+                    }
                     onClick={() => this.props.onPageChanged(this.props.link)}
                 >
                     {this.props.title}

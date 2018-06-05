@@ -1,0 +1,45 @@
+@import 'styles/colors.scss';
+@import 'styles/dimensions.scss';
+@import 'styles/fonts.scss';
+
+
+.appHeader {
+    width: 100%;
+    font-family: $serif;
+    font-size: $dimensionTextH3;
+}
+
+@media (min-width: $breakPointMobile + 1) {
+    .appHeader {
+        text-align: right;
+    }
+}
+@media (max-width: $breakPointMobile) {
+    .appHeader {
+        display: flex;
+        flex-direction: column;
+    }
+    .appHeaderNav {
+        padding-left: 0;
+    }
+}
+
+.appHeaderTitle {
+    font-weight: bold;
+    color: $colorTextSecondary;
+    text-decoration: none;
+    float: left;
+}
+.appHeaderTitle:hover {
+    color: $colorTextPrimary;
+}
+
+.appHeaderNav ul {
+    list-style-type: none;
+    display: inline;
+    padding-left: 0;
+}
+
+.appHeaderNav ul li{
+    display: inline;
+}

@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom';
 
 import HeaderLink from './HeaderLink';
 
+import './Header.css';
+
 const LINKS = [
     {
         link: '/about',
@@ -49,9 +51,9 @@ class Header extends Component {
             );
         };
         return (
-            <header>
-                <h1><Link to='/'>Samory Ka</Link></h1>
-                <nav>
+            <header className='appHeader'>
+                <Link to='/' className='appHeaderTitle'>Samory Ka</Link>
+                <nav className='appHeaderNav'>
                     <ul>
                         {navLinks}
                     </ul>

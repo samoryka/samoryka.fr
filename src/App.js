@@ -10,7 +10,7 @@ import Resume from './components/Content/Resume/Resume';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='app'>
         <Header/>
         <Switch>
             <Route exact={true} path={process.env.PUBLIC_URL + '/'} render={() => <Redirect to='/about' />} />
