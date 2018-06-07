@@ -2,8 +2,11 @@
 @import 'styles/dimensions.scss';
 @import 'styles/fonts.scss';
 
-.content {
+@media (min-width: $breakPointMobile) {
     margin-top: $dimensionBaseSpacing * 2;
+}
+
+.content {
     text-align: justify;
 
     @mixin headingTextBase() {
