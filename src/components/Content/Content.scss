@@ -1,0 +1,62 @@
+@import 'styles/colors.scss';
+@import 'styles/dimensions.scss';
+@import 'styles/fonts.scss';
+
+.content {
+    margin-top: $dimensionBaseSpacing * 2;
+    text-align: justify;
+
+    @mixin headingTextBase() {
+        color: $colorTextPrimary;
+        font-family: $serif;
+    }
+    
+    @mixin bodyTextBase() {
+        color: $colorTextPrimary;
+        font-family: $sansSerif;
+    }
+    
+    span {
+        @include bodyTextBase();
+        font-size: $dimensionTextBody;
+    }
+    
+    a, Link {
+        @include bodyTextBase();
+        font-size: $dimensionTextBody;
+        font-weight: bold;
+        &:hover{
+            color:$colorAccentDark;
+        }
+    }
+    
+    h1 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+    
+    h2 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+    
+    h3 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+    
+    h4 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+    
+    h5 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+    
+    h6 {
+        @include headingTextBase();
+        font-size: $dimensionTextH1;
+    }
+}

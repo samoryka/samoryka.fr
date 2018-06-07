@@ -29,17 +29,18 @@
     color: $colorTextSecondary;
     text-decoration: none;
     float: left;
-}
-.appHeaderTitle:hover {
-    color: $colorTextPrimary;
+
+    &:hover {
+        color: $colorTextPrimary;
+    }
 }
 
 .appHeaderNav ul {
     list-style-type: none;
     display: inline;
     padding-left: 0;
-}
 
-.appHeaderNav ul li{
-    display: inline;
+    li {
+        display: inline;
+    }
 }

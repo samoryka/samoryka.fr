@@ -10,17 +10,18 @@
     text-decoration: none;
     color: $colorTextSecondary;
     transition: $defaultTransition;
+    outline: 0;
+
+    &:hover {
+        color: $colorTextPrimary;
+        background: $colorBackgroundDark;
+    }
 }
 
 @media (max-width: $breakPointMobile) {
     .navLink {
         font-size: $dimensionTextH5;
     }
-}
-
-
-.navLink:hover {
-    color: $colorTextPrimary;
 }
 
 .currentNavLink{
