@@ -6,6 +6,10 @@
     padding-bottom: 0;
 }
 
+p {
+    text-align: justify;
+}
+
 @media (min-width: $breakPointTablet) {
     .app {
         padding-top: $dimensionBaseSpacing * 2;

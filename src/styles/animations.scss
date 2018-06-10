@@ -1,0 +1,12 @@
+@import 'styles/durations.scss';
+@import 'styles/dimensions.scss';
+
+.contentAnimation-enter {
+    transform: translateY($dimensionBaseSpacing);
+    opacity: 0;
+}
+.contentAnimation-enter.contentAnimation-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all $longTransition ease-out;
+}

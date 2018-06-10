@@ -2,13 +2,7 @@
 @import 'styles/dimensions.scss';
 @import 'styles/fonts.scss';
 
-@media (min-width: $breakPointMobile) {
-    margin-top: $dimensionBaseSpacing * 2;
-}
-
 .content {
-    text-align: justify;
-
     @mixin headingTextBase() {
         color: $colorTextPrimary;
         font-family: $serif;
@@ -22,6 +16,9 @@
     span {
         @include bodyTextBase();
         font-size: $dimensionTextBody;
+    }
+    p {
+        margin-top: $dimensionBaseSpacing * 2;
     }
     
     a, Link {

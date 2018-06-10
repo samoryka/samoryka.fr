@@ -1,0 +1,27 @@
+@import 'styles/dimensions.scss';
+@import 'styles/colors.scss';
+
+.profilePicContainer {
+    height: 10em;
+    width: 10em;
+    margin-right: $dimensionBaseSpacing;
+
+    img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background: $colorBackgroundDark;
+    }
+}
+
+@media (min-width: $breakPointMobile) {
+    .profilePicContainer {
+        float: left;
+    }
+}
+
+@media (max-width: $breakPointMobile) {
+    .profilePicContainer {
+        margin:auto;
+    }
+}
