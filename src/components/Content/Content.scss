@@ -60,3 +60,29 @@
         font-size: $dimensionTextH1;
     }
 }
+
+
+@media (min-width: $breakPointTablet) {
+    .content {
+        padding-top: $dimensionBaseSpacing * 5;
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width : $breakPointMobile) and (max-width: $breakPointTablet) {
+    .content {
+        padding-top: $dimensionBaseSpacing * 5;
+        padding-left: $dimensionBaseSpacing * 4;
+        padding-right: $dimensionBaseSpacing * 4;
+    }
+}
+
+@media (max-width : $breakPointMobile){
+    .content {
+        padding-top: $dimensionBaseSpacing * 5;
+        padding-left: $dimensionBaseSpacing * 1;
+        padding-right: $dimensionBaseSpacing * 1;
+    }
+}

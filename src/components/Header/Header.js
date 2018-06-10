@@ -52,14 +52,16 @@ class Header extends Component {
         };
         return (
             <header className='appHeader'>
-                <Link to='/'
-                    className='appHeaderTitle'
-                    onClick={() => {this.onPageChanged()}}>Samory Ka</Link>
-                <nav className='appHeaderNav'>
-                    <ul>
-                        {navLinks}
-                    </ul>
-                </nav>
+                <div className='appHeaderContent'>
+                    <Link to='/'
+                        className='appHeaderTitle'
+                        onClick={() => { this.onPageChanged() }}>Samory Ka</Link>
+                    <nav className='appHeaderNav'>
+                        <ul>
+                            {navLinks}
+                        </ul>
+                    </nav>
+                </div>
             </header>
         );
     }

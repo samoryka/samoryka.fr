@@ -4,16 +4,14 @@
 
 
 .appHeader {
-    width: 100%;
+    width:100%;
     font-family: $serif;
     font-size: $dimensionTextH3;
+    position: fixed;
+    top: 0;
+    background: $colorBackground;
 }
 
-@media (min-width: $breakPointMobile + 1) {
-    .appHeader {
-        text-align: right;
-    }
-}
 @media (max-width: $breakPointMobile) {
     .appHeader {
         display: flex;
@@ -21,6 +19,34 @@
     }
     .appHeaderNav {
         padding-left: 0;
+    }
+    .appHeaderContent {
+        padding-top: $dimensionBaseSpacing * 1;
+        padding-left: $dimensionBaseSpacing * 1;
+        padding-right: $dimensionBaseSpacing * 1;
+    }
+}
+
+@media (min-width : $breakPointMobile) and (max-width: $breakPointTablet) {
+    .appHeader {
+        text-align: right;
+    }
+    .appHeaderContent {
+            padding-top: $dimensionBaseSpacing * 2;
+            padding-left: $dimensionBaseSpacing * 4;
+            padding-right: $dimensionBaseSpacing * 4;
+    }
+}
+
+@media (min-width: $breakPointTablet) {
+    .appHeader {
+        text-align: right;
+    }
+    .appHeaderContent {
+        padding-top: $dimensionBaseSpacing * 2;
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
