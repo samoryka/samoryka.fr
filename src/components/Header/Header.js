@@ -32,7 +32,7 @@ class Header extends Component {
 
     onPageChanged(pageRoute) {
         this.setState({
-            currentPage: pageRoute,
+            currentPage: pageRoute ? pageRoute : '/about',
         });
     }
 
@@ -52,7 +52,9 @@ class Header extends Component {
         };
         return (
             <header className='appHeader'>
-                <Link to='/' className='appHeaderTitle'>Samory Ka</Link>
+                <Link to='/'
+                    className='appHeaderTitle'
+                    onClick={() => {this.onPageChanged()}}>Samory Ka</Link>
                 <nav className='appHeaderNav'>
                     <ul>
                         {navLinks}
