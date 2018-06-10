@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ComponentTransition from '../../Utils/ComponentTransition';
 
+import resume from '../../../assets/documents/resume.pdf';
 import profilePic from '../../../assets/images/profilePic.jpg';
 import './About.css';
 
@@ -35,7 +36,7 @@ class About extends Component {
                     </p>
                     <p>
                         <span>
-                            You can find me on <a href={LINKEDIN_LINK} target="_blank">LinkedIn</a> and <a href={GITHUB_LINK} target="_blank">GitHub</a>.
+                            You can find more about me in <a className="resumeLink" href={resume} target="_blank">my resume</a>, on <a href={LINKEDIN_LINK} target="_blank">LinkedIn</a> or on <a href={GITHUB_LINK} target="_blank">GitHub</a>.
                         </span>
                     </p>
                 </div>

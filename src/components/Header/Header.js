@@ -13,10 +13,6 @@ const LINKS = [
     {
         link: '/projects',
         title: 'Projects',
-    },
-    {
-        link: '/resume',
-        title: 'Resume',
     }
 ]
 

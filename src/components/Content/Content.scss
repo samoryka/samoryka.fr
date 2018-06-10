@@ -29,6 +29,11 @@
             color:$colorAccentDark;
         }
     }
+
+    .resumeLink {
+        @extend a;
+        color:$colorAccent;
+    }
     
     h1 {
         @include headingTextBase();
@@ -37,27 +42,27 @@
     
     h2 {
         @include headingTextBase();
-        font-size: $dimensionTextH1;
+        font-size: $dimensionTextH2;
     }
     
     h3 {
         @include headingTextBase();
-        font-size: $dimensionTextH1;
+        font-size: $dimensionTextH3;
     }
     
     h4 {
         @include headingTextBase();
-        font-size: $dimensionTextH1;
+        font-size: $dimensionTextH4;
     }
     
     h5 {
         @include headingTextBase();
-        font-size: $dimensionTextH1;
+        font-size: $dimensionTextH5;
     }
     
     h6 {
         @include headingTextBase();
-        font-size: $dimensionTextH1;
+        font-size: $dimensionTextH6;
     }
 }
 
