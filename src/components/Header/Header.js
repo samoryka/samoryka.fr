@@ -19,16 +19,20 @@ const LINKS = [
 class Header extends Component {
 
     componentWillMount() {
+        this.updateCurrentPage();
+    }
+
+    componentDidUpdate(previousProps) {
+        if (this.props.location !== previousProps.location) {
+            this.updateCurrentPage();
+        }
+    }
+
+    updateCurrentPage() {
         // We default to /about
         let location = this.props.location.pathname !== '/' ? this.props.location.pathname : '/about';
         this.setState({
             currentPage: location,
-        });
-    }
-
-    onPageChanged(pageRoute) {
-        this.setState({
-            currentPage: pageRoute ? pageRoute : '/about',
         });
     }
 
@@ -42,16 +46,13 @@ class Header extends Component {
                     title={headerLink.title}
                     link={headerLink.link}
                     currentPage={this.state.currentPage}
-                    onPageChanged={page => this.onPageChanged(page)}
                 />
             );
         };
         return (
             <header className='appHeader'>
                 <div className='appHeaderContent'>
-                    <Link to='/'
-                        className='appHeaderTitle'
-                        onClick={() => { this.onPageChanged() }}>Samory Ka</Link>
+                    <Link to='/' className='appHeaderTitle'>Samory Ka</Link>
                     <nav className='appHeaderNav'>
                         <ul>
                             {navLinks}
