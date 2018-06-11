@@ -3,9 +3,14 @@
 @import 'styles/colors.scss';
 @import 'styles/fonts.scss';
 
+@media (min-width: $breakPointTablet) {
+    .projectCard {
+        height: 27 * $dimensionBaseSpacing;
+    }
+}
+
 .projectCard {
     width: 19.5 * $dimensionBaseSpacing;
-    height: 27 * $dimensionBaseSpacing;
     margin: auto;
     margin-bottom :$dimensionBaseSpacing;
     border-radius: 5px;
