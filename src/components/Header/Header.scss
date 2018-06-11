@@ -10,6 +10,7 @@
     position: fixed;
     top: 0;
     background: $colorBackground;
+    z-index: 2;
 }
 
 @media (max-width: $breakPointMobile) {

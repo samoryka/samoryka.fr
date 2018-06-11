@@ -1,0 +1,10 @@
+@import 'styles/dimensions.scss';
+
+.projectsContainer {
+        display: flex;
+        width: 100%;
+        height: 24 * $dimensionBaseSpacing;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
