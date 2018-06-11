@@ -2,8 +2,7 @@
 @import 'styles/dimensions.scss';
 @import 'styles/durations.scss';
 
-.navLinkContainer:nth-child(1) {
-    margin-left: $dimensionBaseSpacing/2;
+.navLinkContainer:first-child {
     margin-right: $dimensionBaseSpacing/2;
 }
 .navLink {
@@ -25,5 +24,5 @@
 
 .currentNavLink{
     color: $colorTextPrimary;
-    border-bottom: 3px solid $colorAccent;
+    border-bottom: 2px solid $colorAccent;
 }
