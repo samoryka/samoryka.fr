@@ -1,1 +1,1 @@
-This is my personal website. It is made with React.
+This is my personal website's sources. It is made with React.
