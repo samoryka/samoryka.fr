@@ -1,5 +1,6 @@
 {
   "name": "samoryka.com",
+  "homepage": "https://samoryka.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +20,11 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
+    "postbuild": "react-snap",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-snap": "^1.13.0"
   }
 }
