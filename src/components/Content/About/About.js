@@ -25,7 +25,7 @@ class About extends Component {
                     <p>
                         <span>
                             I am about to graduate from <b>INSA Lyon</b> and am currently
-                        looking for a <b>Junior Software Engineer</b> position in <b>Berlin</b>.
+                        looking for a <b>Junior Software Engineer</b> position in <b>Berlin</b>, <b>Paris</b> or <b>London</b>.
                     </span>
                     </p>
                     <p>
