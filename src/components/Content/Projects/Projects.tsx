@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import ComponentTransition from '../../Utils/ComponentTransition';
-import Project from './Project/Project';
+import ComponentTransition from "../../Utils/ComponentTransition";
+import Project from "./Project/Project";
 
-import './Projects.css';
+import "./Projects.css";
 import {PROJECTS} from "../../../data/projects";
 
 const Projects = () => {
@@ -18,11 +18,11 @@ const Projects = () => {
     ));
 
     return (
-        <ComponentTransition animation='contentAnimation'>
+        <ComponentTransition animation="contentAnimation">
             <div>
                 <h2>Projects</h2>
                 <p><span>Here are some of the projects I have worked on in the past:</span></p>
-                <div className='projectsContainer'>
+                <div className="projectsContainer">
                     {projects}
                 </div>
             </div>

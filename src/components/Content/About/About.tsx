@@ -1,12 +1,12 @@
-import * as React from 'react';
-import ComponentTransition from '../../Utils/ComponentTransition';
+import * as React from "react";
+import ComponentTransition from "../../Utils/ComponentTransition";
 
-import resume from '../../../assets/documents/resume.pdf';
-import profilePic from '../../../assets/images/profilePic.jpg';
-import './About.css';
+import resume from "../../../assets/documents/resume.pdf";
+import profilePic from "../../../assets/images/profilePic.jpg";
+import "./About.css";
 
-const LINKEDIN_LINK = 'https://www.linkedin.com/in/samory-ka/';
-const GITHUB_LINK = 'https://github.com/samoryka';
+const LINKEDIN_LINK = "https://www.linkedin.com/in/samory-ka/";
+const GITHUB_LINK = "https://github.com/samoryka";
 
 const About = () => (
     <ComponentTransition animation="contentAnimation">
