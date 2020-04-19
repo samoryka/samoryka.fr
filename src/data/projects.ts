@@ -1,4 +1,5 @@
 import amcsImage from "../assets/images/projects/amcs.jpg";
+import lesfuretsImage from "../assets/images/projects/lesfurets.jpg";
 import adnoscoImage from "../assets/images/projects/adnosco.jpg";
 import verecipesImage from "../assets/images/projects/verecipes.jpg";
 import cheapConverterImage from "../assets/images/projects/cheapconverter.jpg";
@@ -6,6 +7,13 @@ import parkenddImage from "../assets/images/projects/parkendd.jpg";
 import { ProjectItem } from "../types";
 
 export const PROJECTS: ProjectItem[] = [
+    {
+        title: "Comparison services",
+        description: "At lesfurets, my team works on creating comparators for home/financial products such as energy, broadband and mortgages. We ship new features on a daily basis.",
+        link: "https://www.lesfurets.com/energie/formulaire",
+        image: lesfuretsImage,
+        technologies: ["React", "TypeScript", "Java", "Docker"]
+    },
     {
         title: "AMCS",
         description: "I developed an Adobe Reader plugin for AMCS, an application used at the TU Dresden to make lectures more interactive.",
@@ -25,7 +33,7 @@ export const PROJECTS: ProjectItem[] = [
         description: "A simple React PWA I made to convert weights and volumes.",
         link: "https://github.com/samoryka/cheap-converter",
         image: cheapConverterImage,
-        technologies: ["React", "PWA", "JavaScript", "HTML/CSS"]
+        technologies: ["React", "PWA", "JavaScript"]
     },
     {
         title: "Adnosco",

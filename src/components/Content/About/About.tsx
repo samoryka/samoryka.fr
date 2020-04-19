@@ -17,25 +17,23 @@ const About = () => (
             </div>
             <p>
                 <span>
-                    Hi there, my name is <b>Samory Ka</b> and I am a <b>Software Engineer</b>.
-                    </span>
+                    Hi there, my name is <b>Samory Ka</b>.
+                </span>
             </p>
             <p>
                 <span>
-                    I am about to graduate from <b>INSA Lyon</b> and am currently
-                        looking for a <b>Junior Software Engineer</b> position in <b>Berlin</b>, <b>Paris</b> or <b>London</b>.
-                    </span>
+                    I currently live in <b>Paris</b> and work as a <b>Software Engineer</b> for <a className="resumeLink" href="https://lesfurets.com" target="_blank" rel="noopener noreferrer" >lesfurets</a>.
+                </span>
             </p>
             <p>
                 <span>
-                    I am mostly interested in <b>Web Development</b>,
-                        <b> Software Accessibility</b> and <b>UX Design</b>.
-                    </span>
+                    My interests include <b>Web Development</b>, <b> Software Accessibility</b>, <b>Music</b>, <b>Graphic Arts</b>, <b>Cooking</b> and many other things!
+                </span>
             </p>
             <p>
                 <span>
                     You can find out more about me in <a className="resumeLink" href={resume} target="_blank" rel="noopener noreferrer" >my resume</a>, on <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer" >LinkedIn</a> or on <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer" >GitHub</a>.
-                        </span>
+                </span>
             </p>
         </div>
     </ComponentTransition>

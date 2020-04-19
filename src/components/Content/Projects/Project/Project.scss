@@ -5,7 +5,7 @@
 
 @media (min-width: $breakPointTablet) {
     .projectCard {
-        height: 27 * $dimensionBaseSpacing;
+        height: 30 * $dimensionBaseSpacing;
     }
 }
 
@@ -46,6 +46,7 @@
         p {
             margin-top:0.5 * $dimensionBaseSpacing;
             margin-bottom:0.5 * $dimensionBaseSpacing;
+            text-align: left;
         }
     }
     .projectTitle {
@@ -67,7 +68,7 @@
         box-sizing: border-box;
         display: inline-block;
         bottom: 0;
-        text-align: justify;
+        text-align: left;
         span {
             font-size: $dimensionTextCaption;
             font-weight: normal;
