@@ -5,3 +5,8 @@ export interface ProjectItem {
     image: string;
     technologies: string[];
 };
+
+export interface HeaderItem {
+    link: string;
+    title: string;
+};
