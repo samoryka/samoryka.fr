@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css';
-import { ProjectItem } from "../../../types";
+import { ProjectItem } from "../../../../types";
 
 
 const Project: (props: ProjectItem) => JSX.Element = ({title, description, link, image, technologies}) => (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter, RouteComponentProps } from "react-router-dom";
 
-import HeaderLink from "./HeaderLink";
+import HeaderLink from "./HeaderLink/HeaderLink";
 
 import "./Header.css";
 import { HEADER_LINKS } from "../../data/header-links";

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ComponentTransition from '../../Utils/ComponentTransition';
-import Project from './Project';
+import Project from './Project/Project';
 
 import './Projects.css';
 import {PROJECTS} from "../../../data/projects";

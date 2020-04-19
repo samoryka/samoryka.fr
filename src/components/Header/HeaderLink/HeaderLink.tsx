@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import './HeaderLink.css';
-import { HeaderItem } from 'src/types';
+import { HeaderItem } from '../../../types';
 
 const HeaderLink: (props: HeaderItem & {isCurrent: boolean}) => JSX.Element = ({link, title, isCurrent}) => (
     <li className='navLinkContainer'>
