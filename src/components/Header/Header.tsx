@@ -6,6 +6,8 @@ import HeaderLink from "./HeaderLink/HeaderLink";
 import "./Header.css";
 import { HEADER_LINKS } from "../../data/header-links";
 
+const withoutSlashes = (string: string) => string.replace(/\//g, "");
+
 const Header: (props: RouteComponentProps) => JSX.Element = ({location}) => {
     const [currentPage, setCurrentPage] = useState("/about");
 
@@ -18,7 +20,7 @@ const Header: (props: RouteComponentProps) => JSX.Element = ({location}) => {
             key={headerLink.title}
             title={headerLink.title}
             link={headerLink.link}
-            isCurrent={currentPage === headerLink.link}
+            isCurrent={withoutSlashes(currentPage) === withoutSlashes(headerLink.link)}
         />
     ));
     
