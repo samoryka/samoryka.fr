@@ -2,15 +2,22 @@ import amcsImage from "../assets/images/projects/amcs.jpg";
 import lesfuretsImage from "../assets/images/projects/lesfurets.jpg";
 import adnoscoImage from "../assets/images/projects/adnosco.jpg";
 import verecipesImage from "../assets/images/projects/verecipes.jpg";
-import cheapConverterImage from "../assets/images/projects/cheapconverter.jpg";
 import parkenddImage from "../assets/images/projects/parkendd.jpg";
+import doctolibImage from "../assets/images/projects/doctolib.jpg";
 import { ProjectItem } from "../types";
 
 export const PROJECTS: ProjectItem[] = [
     {
+        title: "Doctolib for hospitals",
+        description: "My team works on making Doctolib better for hospitals. This includes adapting existing features so that they work at a very large scale, and creating completely new ones.",
+        link: "https://www.doctolib.fr/",
+        image: doctolibImage,
+        technologies: ["Ruby on Rails", "React"]
+    },
+    {
         title: "Comparison services",
-        description: "At lesfurets, my team works on creating comparators for home/financial products such as energy, broadband and mortgages. We ship new features on a daily basis.",
-        link: "https://www.lesfurets.com/energie/formulaire",
+        description: "At lesfurets, I worked in a team creating comparators for home/financial products such as energy, broadband and mortgages.",
+        link: "https://www.lesfurets.com",
         image: lesfuretsImage,
         technologies: ["React", "TypeScript", "Java", "Docker"]
     },
@@ -27,13 +34,6 @@ export const PROJECTS: ProjectItem[] = [
         link: "https://github.com/samoryka/VeRecipesClient",
         image: verecipesImage,
         technologies: ["Java", "Spring", "Android", "AWS"]
-    },
-    {
-        title: "Cheap Converter",
-        description: "A simple React PWA I made to convert weights and volumes.",
-        link: "https://github.com/samoryka/cheap-converter",
-        image: cheapConverterImage,
-        technologies: ["React", "PWA", "JavaScript"]
     },
     {
         title: "Adnosco",

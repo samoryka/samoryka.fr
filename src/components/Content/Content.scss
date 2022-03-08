@@ -29,11 +29,6 @@
             color:$colorAccentDark;
         }
     }
-
-    .resumeLink {
-        @extend a;
-        color:$colorAccent;
-    }
     
     h1 {
         @include headingTextBase();
