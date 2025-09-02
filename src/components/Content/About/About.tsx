@@ -17,7 +17,7 @@ const About = () => (
             </p>
             <p>
                 <span>
-                    I currently live in <b>Berlin</b> and work as a <b>Software Engineer</b> for <a href="https://www.doctolib.fr/" target="_blank" rel="noopener noreferrer" >Doctolib</a>.
+                    I currently live in <b>Berlin</b> and work as a <b>Senior Software Engineer</b> for <a href="https://www.babbel.com/" target="_blank" rel="noopener noreferrer" >Babbel</a>.
                 </span>
             </p>
             <p> 

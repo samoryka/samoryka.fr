@@ -4,12 +4,20 @@ import adnoscoImage from "../assets/images/projects/adnosco.jpg";
 import verecipesImage from "../assets/images/projects/verecipes.jpg";
 import parkenddImage from "../assets/images/projects/parkendd.jpg";
 import doctolibImage from "../assets/images/projects/doctolib.jpg";
+import babbelImage from "../assets/images/projects/babbel.jpg";
 import { ProjectItem } from "../types";
 
 export const PROJECTS: ProjectItem[] = [
     {
+        title: "Babbel B2B",
+        description: "My team works on the B2B part of Babbel. We're working on features enabling companies to provide language courses to their employees.",
+        link: "https://https://www.babbelforbusiness.com//",
+        image: babbelImage,
+        technologies: ["Ruby on Rails", "React"]
+    },
+    {
         title: "Doctolib for hospitals",
-        description: "My team works on making Doctolib better for hospitals. This includes adapting existing features so that they work at a very large scale, and creating completely new ones.",
+        description: "My team worked on making Doctolib better for hospitals. This includes adapting existing features so that they work at a very large scale, and creating completely new ones.",
         link: "https://www.doctolib.fr/",
         image: doctolibImage,
         technologies: ["Ruby on Rails", "React"]
